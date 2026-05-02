@@ -143,8 +143,8 @@
     <Image Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="OpenHardwareMonitorLib">
-      <HintPath>..\..\..\..\Downloads\OpenHardwareMonitorLib.dll</HintPath>
+    <Reference Include="LibreHardwareMonitorLib">
+      <HintPath>..\..\..\..\Desktop\LibreHardwareMonitorLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
