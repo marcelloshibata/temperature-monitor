@@ -3,5 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="main-project.vcxproj" />
+  <Folder Name="/app/">
+    <Project Path="main-project.vcxproj" />
+  </Folder>
 </Solution>

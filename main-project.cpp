@@ -39,9 +39,10 @@ int main(array<System::String ^> ^args)
 					}
 
 					for each (ISensor ^ sensor in hardware->Sensors) {
-						if (sensor->SensorType == SensorType::Temperature && sensor->Value.HasValue && sensor->Value.Value > 0) { // Verifica se o sensor é do tipo temperatura, se tem um valor válido e se o valor é maior que 0 para evitar mostrar temperaturas negativas ou sensores sem leitura.
-								float temperatureDecimal = sensor->Value.Value; // Pega o valor do sensor de temperatura e transforma em Float para formatar apenas com duas casas decimais.
-								Console::WriteLine(sensor->Name + ": " + temperatureDecimal.ToString("F2") + " C");
+						if (sensor->SensorType == SensorType::Temperature) {
+								float temp = sensor->Value.Value; // Pega o valor do sensor de temperatura e transforma em Float para formatar apenas com duas casas decimais.
+								Console::WriteLine(sensor->Name + ": " + temp.ToString("F2") + " C");
+								Console::WriteLine();
 						}
 					}
 
